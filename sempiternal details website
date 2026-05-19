@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sempiternal Details | Jacksonville Auto Detailing</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Poppins',sans-serif;background:#0b0f19;color:white}
+
+header{background:rgba(10,12,20,.9);backdrop-filter:blur(8px);padding:20px;text-align:center;position:sticky;top:0;border-bottom:1px solid rgba(255,255,255,.08)}
+header h1{margin:0;font-size:34px;letter-spacing:3px;font-weight:700}
+
+nav{margin-top:10px}
+nav a{color:#d1d5db;margin:0 15px;text-decoration:none;font-weight:500;transition:.3s}
+nav a:hover{color:white}
+
+.hero{padding:140px 20px;text-align:center;background:radial-gradient(circle at top,#111827,#020617)}
+.hero h2{font-size:48px;margin-bottom:15px;font-weight:700}
+.hero p{font-size:18px;color:#9ca3af}
+
+.btn{display:inline-block;margin-top:25px;padding:14px 34px;background:linear-gradient(135deg,#3b82f6,#2563eb);color:white;border-radius:8px;text-decoration:none;font-weight:600;box-shadow:0 10px 25px rgba(59,130,246,.35);transition:.25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 15px 35px rgba(59,130,246,.45)}
+
+.section{padding:90px 20px;max-width:1200px;margin:auto}
+.section h2{text-align:center;margin-bottom:50px;font-size:34px;font-weight:700}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+
+.card{background:linear-gradient(145deg,#111827,#030712);padding:30px;border-radius:14px;border:1px solid rgba(255,255,255,.06);transition:.25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 15px 35px rgba(0,0,0,.5)}
+.card h3{margin-top:0;font-weight:600}
+
+.price{font-size:34px;margin:12px 0 8px 0;color:#60a5fa;font-weight:700}
+.tiers{color:#9ca3af;font-size:14px;line-height:1.6;margin-top:4px}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.gallery-grid img{width:100%;border-radius:10px;border:1px solid rgba(255,255,255,.08)}
+
+.review{background:linear-gradient(145deg,#111827,#030712);padding:22px;border-radius:12px;margin-bottom:15px;border:1px solid rgba(255,255,255,.06)}
+
+.contact{background:#020617;text-align:center;border-top:1px solid rgba(255,255,255,.08)}
+
+form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:12px}
+
+input,textarea,select{padding:12px;border-radius:6px;border:1px solid rgba(255,255,255,.1);background:#020617;color:white}
+
+button{padding:14px;border:none;background:linear-gradient(135deg,#3b82f6,#2563eb);color:white;border-radius:8px;font-weight:600;cursor:pointer}
+
+.map{margin-top:40px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+
+footer{text-align:center;padding:25px;background:#020617;color:#6b7280;border-top:1px solid rgba(255,255,255,.08)}
+
+/* Floating Text Button */
+.floating-text{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#2563eb;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+z-index:999
+}
+</style>
+<style>
+/* before after slider */
+.compare{position:relative;max-width:900px;margin:40px auto}
+.compare img{width:100%;display:block;border-radius:10px}
+.compare .after{position:absolute;top:0;left:0;overflow:hidden;width:50%}
+.compare input{width:100%}
+
+/* booking */
+.booking-box{max-width:500px;margin:40px auto;background:#030712;padding:25px;border-radius:12px;border:1px solid rgba(255,255,255,.08)}
+
+.badge{background:#2563eb;padding:4px 10px;border-radius:6px;font-size:12px;margin-left:8px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Sempiternal Details</h1>
+<nav>
+<a href="#services">Services</a>
+<a href="#addons">Add‑Ons</a>
+<a href="#gallery">Before & After</a>
+<a href="#reviews">Reviews</a>
+<a href="#why">Why Us</a>
+<a href="#contact">Book</a>
+</nav>
+</header>
+
+<section class="hero">
+<div style="display:inline-block;background:#22c55e;color:#02130a;padding:8px 16px;border-radius:20px;font-weight:600;font-size:14px;margin-bottom:15px;box-shadow:0 5px 15px rgba(0,0,0,.3)">
+🔥 $10 Professional Ceramic Coat with Every Exterior & Full Detail
+</div>
+<h2>Premium Jacksonville Auto Detailing</h2>
+<p>Interior • Exterior • Full Detail • Mobile Service</p>
+<p style="margin-top:8px;font-size:17px;color:#9ca3af">Drop‑Off & Pickup Available</p>
+<a class="btn" href="sms:13248881413">Text To Book</a>
+</section>
+
+<section id="services" class="section">
+<h2>Our Detailing Services</h2>
+<div class="services">
+
+<div class="card">
+<h3>Exterior Detail</h3>
+<div class="price">$40+</div>
+<p>Thorough exterior wash using a foam cannon pre-soak, detailed wheel and tire cleaning, and a finishing shine that enhances gloss while helping protect the vehicle’s paint.</p>
+<ul class="tiers">
+<li>Foam cannon pre-soak & hand wash</li>
+<li>Wheel & tire deep clean</li>
+<li>Tire shine application</li>
+<li>Exterior wipe-down & gloss finish</li>
+</ul>
+<div class="tiers">Mini / Coupe / Sedan $40<br>SUV $60<br>Truck $80</div>
+</div>
+
+<div class="card">
+<h3>Interior Detail</h3>
+<div class="price">$50+</div>
+<p>Deep vacuum, interior wipe-down, dashboard and trim cleaning, plus seat shampoo treatment, leather conditioning, and deep steam cleaning to remove stains, dirt, bacteria, and odors for a fully restored interior.</p>
+<ul class="tiers">
+<li>Full interior vacuum</li>
+<li>Dashboard & trim cleaning</li>
+<li>Seat shampoo treatment</li>
+<li>Leather conditioning</li>
+<li>Deep steam cleaning</li>
+<li>Odor & bacteria removal</li>
+</ul>
+<div class="tiers">Mini / Coupe / Sedan $50<br>SUV $70<br>Truck $90</div>
+</div>
+
+<div class="card" style="border:1px solid #3b82f6;position:relative">
+<div style="position:absolute;top:-12px;right:15px;background:#3b82f6;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:600">Most Popular</div>
+<h3>Full Detail</h3>
+<div class="price">$85+</div>
+<p>Interior + exterior full restoration.</p>
+<ul class="tiers">
+<li>Complete exterior detail</li>
+<li>Full interior deep clean</li>
+<li>Seat shampoo & stain removal</li>
+<li>Leather conditioning</li>
+<li>Steam cleaning</li>
+<li>Full vehicle refresh</li>
+</ul>
+<div class="tiers">Mini / Coupe / Sedan $85<br>SUV $115<br>Truck $145</div>
+</div>
+
+<div id="addons" style="margin-top:60px">
+<h2 style="margin-bottom:25px">Add‑Ons</h2>
+<div class="services">
+
+
+
+<div class="card">
+<h3>Engine Bay Cleaning</h3>
+<p class="price" style="font-size:22px">$30+</p>
+<p class="tiers">Safe degreasing and rinse of the engine compartment to remove built‑up dirt, oil, and grime for a cleaner engine bay.</p>
+</div>
+
+<div class="card">
+<h3>Clay Bar Treatment</h3>
+<p class="price" style="font-size:22px">$50+</p>
+<p class="tiers">Special clay removes embedded contaminants from the paint surface, leaving the car smoother and ready for protection.</p>
+</div>
+
+<div class="card" style="position:relative;border:1px solid #3b82f6">
+<div style="position:absolute;top:-12px;right:15px;background:#3b82f6;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:600">Popular Add‑On</div>
+<h3>Headlight Restoration</h3>
+<p class="price" style="font-size:22px">$40+</p>
+<p class="tiers">Removes oxidation and haze from headlights, restoring clarity and improving nighttime visibility.</p>
+</div>
+
+<div class="card">
+<h3>Interior Odor Treatment</h3>
+<p class="price" style="font-size:22px">$25+</p>
+<p class="tiers">Deodorizing treatment that neutralizes smoke, food, and musty odors to leave the interior smelling fresh.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</section>
+
+
+
+<section id="gallery" class="section">
+<h2>Before & After Results</h2>
+<p style="max-width:800px;margin:auto;text-align:center;color:#9ca3af">
+Our detailing services restore vehicles to a like-new appearance. From deep interior cleaning to full exterior shine restoration, Sempiternal Details focuses on transforming dirty, neglected vehicles into clean, refreshed, and protected rides. Customer before-and-after results will be showcased here as we continue completing more detailing projects in the Hillcrest area of Jacksonville.
+</p>
+</section>
+
+<section id="reviews" class="section">
+<h2>Customer Reviews</h2>
+
+
+
+<form id="reviewForm">
+<input type="text" placeholder="Your Name" required>
+<select required>
+<option value="">Rating</option>
+<option>⭐️⭐️⭐️⭐️⭐️</option>
+<option>⭐️⭐️⭐️⭐️</option>
+<option>⭐️⭐️⭐️</option>
+<option>⭐️⭐️</option>
+<option>⭐️</option>
+</select>
+<textarea placeholder="Write your review" rows="4" required></textarea>
+<button type="submit">Submit Review</button>
+</form>
+
+<div style="margin-top:40px" id="reviewList"></div>
+</section>
+
+<section id="why" class="section">
+<h2>Why Choose Sempiternal Details</h2>
+<div class="services">
+
+<div class="card">
+<h3>Professional Equipment</h3>
+<p>High quality detailing tools and safe chemicals.</p>
+</div>
+
+<div class="card">
+<h3>Attention To Detail</h3>
+<p>We treat every vehicle with care.</p>
+</div>
+
+<div class="card">
+<h3>Mobile Service</h3>
+<p>We come to you anywhere in the Hillcrest area of Jacksonville.</p>
+</div>
+
+<div class="card">
+<h3>Trusted Local Business</h3>
+<p>Proudly serving Jacksonville Florida.</p>
+</div>
+
+</div>
+</section>
+
+
+
+<section id="contact" class="section contact">
+<h2>Book Your Detail</h2>
+<p>Fast booking — text us to schedule.</p>
+<p><strong>324‑888‑1413</strong></p>
+<a class="btn" href="sms:13248881413">Text To Book</a>
+
+
+
+<div class="map">
+<iframe src="https://maps.google.com/maps?q=Jacksonville%20Florida&t=&z=12&ie=UTF8&iwloc=&output=embed" width="100%" height="350" style="border:0"></iframe>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Sempiternal Details | Jacksonville Mobile Auto Detailing</p>
+</footer>
+
+<a class="floating-text" href="sms:13248881413">Text Us</a>
+
+<script>
+const form=document.getElementById("reviewForm")
+const list=document.getElementById("reviewList")
+
+function loadReviews(){
+const saved=JSON.parse(localStorage.getItem("sempiternalReviews")||"[]")
+saved.forEach(r=>addReview(r))
+}
+
+function addReview(r){
+const div=document.createElement("div")
+div.className="review"
+div.innerHTML=`<strong>${r.rating}</strong> \"${r.text}\"<br><span style='color:#9ca3af;font-size:14px'>— ${r.name}</span>`
+list.prepend(div)
+}
+
+form.addEventListener("submit",e=>{
+e.preventDefault()
+
+const name=form.children[0].value
+const rating=form.children[1].value
+const text=form.children[2].value
+
+const review={name,rating,text}
+
+let saved=JSON.parse(localStorage.getItem("sempiternalReviews")||"[]")
+saved.push(review)
+localStorage.setItem("sempiternalReviews",JSON.stringify(saved))
+
+addReview(review)
+form.reset()
+})
+
+loadReviews()
+
+
+/* before after slider */
+const slider=document.getElementById("slider")
+if(slider){
+const after=document.querySelector(".after")
+slider.addEventListener("input",e=>{
+after.style.width=e.target.value+"%"
+})
+}
+
+
+</script>
+
+</body>
+</html>
